@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('./assets/Mona Sans/Mona-Sans.woff2') format('truetype');
+}
+
+html {
+  font-family: 'Mona Sans';
+  color: #0d0c22;
+}
+
+:root {
+  --black: #0d0c22;
+  --input-gray: #f4f5fb;
+  --bg: #f8f7f4;
+  --topbar-height: 60px;
+  --shadow-button: 0 0 8px 0 rgba(17, 22, 26, 0.16),
+    0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+  --shadow-card: 0 0 4px 0 rgba(17, 22, 26, 0.16),
+    0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
+}
+
+body {
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons {
+  border: 1px solid var(--black);
+
+  background: var(--black);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: white;
+  width: 100%;
+  height: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: Mona Sans;
+}
